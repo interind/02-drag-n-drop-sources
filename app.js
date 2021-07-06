@@ -39,8 +39,15 @@ function dragleave(evt) {
 }
 
 function dragdrop(evt) {
-  if (evt.target.classList.contains('placeholder')) {
+   if (evt.target.classList.contains('placeholder')) {
     evt.target.classList.add('placeholder_active');
+    if (evt.target.classList.contains('done')) {
+    item.textContent = '💰💰💰';
+  } else if (evt.target.classList.contains('progress')) {
+    item.textContent = '💰💰';
+  } else if (evt.target.classList.contains('start')) {
+    item.textContent = '💰';
+  }
     setTimeout(() => {
       evt.target.classList.remove('placeholder_active');
     }, 1000);

@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: 'Roboto', sans-serif;
   background-color: #e5e5e5;
   display: flex;
@@ -32,9 +32,10 @@ body {
 
 .col-header {
   width: 150px;
-  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
-  border-radius: 20px;
   padding: 0.8rem 1rem;
+  font-size: 50px;
+  text-align: center;
+  background: transparent;
   color: #fff;
 }
 
@@ -42,10 +43,10 @@ body {
   width: 150px;
   height: 66px;
   border: 1px solid #eee;
-  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 20px;
-  background: #f7f6f7;
+  background: transparent;
   padding: 0.8rem 1rem;
+  font-size: 25px;
   color: #828282;
   text-align: center;
   cursor: grab;
@@ -78,16 +79,4 @@ body {
   border-radius: 20px;
   width: 150px;
   height: 66px;
-}
-
-.start {
-  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
-}
-
-.progress {
-  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
-}
-
-.done {
-  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
 }
